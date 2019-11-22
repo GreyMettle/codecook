@@ -209,7 +209,7 @@ void CMFCApplication1Dlg::OnProcessButtonClick()
          for (int x = 0; x < bgra.cols; ++x)
          {
             Vec4b & pixel = bgra.at<Vec4b>(y, x);
-            if (pixel[0] == 0 && pixel[1] == 0 && pixel[2] == 255)
+            if (pixel[0] == blue && pixel[1] == green && pixel[2] == red)
             {
                pixel[3] = 0;
             }
